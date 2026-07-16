@@ -50,6 +50,7 @@ El objetivo es que todas las configuraciones residan en ~/.config/ y que un solo
 if [ ! -f "$HOME/.tmux.conf" ]; then
   echo "Descargando configuración de Tmux desde GitHub..."
   curl -o "$HOME/.tmux.conf" https://raw.githubusercontent.com/mdengapa/dotfiles/main/.tmux.conf
+  curl -fsSL https://raw.githubusercontent.com/mdengapa/dotfiles/main/setup-zsh.sh | bash
 fi
 ```
 
