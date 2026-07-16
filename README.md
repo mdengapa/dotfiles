@@ -34,3 +34,11 @@ El objetivo es que todas las configuraciones residan en ~/.config/ y que un solo
 
 **Starship:**  Coloca el archivo starship.toml directamente en el repo y asegúrate de que .zshenv tenga la variable STARSHIP_CONFIG apuntando a la ruta correcta dentro de tu configuración de Zsh.
 
+# Ejemplo de automatización para tu script
+```
+if [ ! -f "$HOME/.tmux.conf" ]; then
+  echo "Descargando configuración de Tmux desde GitHub..."
+  curl -o "$HOME/.tmux.conf" https://raw.githubusercontent.com/tu-usuario/dotfiles/main/.tmux.conf
+fi
+```
+
