@@ -1,0 +1,21 @@
+##1. Script de Automatización (setup.sh)
+Este script instala Homebrew, las herramientas de Rust y crea los enlaces simbólicos desde el repositorio a tu carpeta HOME.
+
+``` bash
+#!/bin/bash
+# Instalación de herramientas base (macOS) [10, 11]
+brew install zsh tmux neovim starship fzf zoxide eza bat fd ripgrep
+
+# Crear directorios necesarios [12]
+mkdir -p ~/.config ~/.cache/zsh ~/.local/state/zsh
+
+# Clonar gestores de plugins (TPM para Tmux) [13]
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Vincular archivos del repositorio al sistema [2]
+# (Asumiendo que estás dentro de la carpeta del repo clonado)
+ln -sf $(pwd)/.config/zsh ~/.config/zsh
+ln -sf $(pwd)/.config/nvim ~/.config/nvim
+ln -sf $(pwd)/.config/tmux ~/.config/tmux
+ln -sf $(pwd)/.config/starship.toml ~/.config/starship.toml
+```
