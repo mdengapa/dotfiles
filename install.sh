@@ -6,7 +6,7 @@
 #   Desde dentro del repo ya clonado:
 #     bash install.sh
 #   O cargado directo (clona el repo solo si no lo tienes ya):
-#     curl -fsSL https://raw.githubusercontent.com/<usuario>/<repo>/main/install.sh | bash
+#     curl -fsSL https://raw.githubusercontent.com/mdengapa/dotfiles/main/install.sh | bash
 #   Antes de usar el modo curl, edita REPO_URL más abajo (y en setup.sh /
 #   setup-nvim.sh, que hacen la misma comprobación por su cuenta).
 #
@@ -15,11 +15,11 @@ set -euo pipefail
 log()  { printf '\033[1;34m[install]\033[0m %s\n' "$*"; }
 warn() { printf '\033[1;33m[install][aviso]\033[0m %s\n' "$*"; }
 
-REPO_URL="https://github.com/<usuario>/<repo>.git"
+REPO_URL="https://github.com/mdengapa/dotfiles.git"
 DEFAULT_REPO_DIR="$HOME/dotfiles"
 
-if [[ "$REPO_URL" == *"<usuario>"* ]]; then
-  warn "REPO_URL todavía tiene el placeholder sin editar (<usuario>/<repo>)."
+if [[ "$REPO_URL" == *"mdengapa"* ]]; then
+  warn "REPO_URL todavía tiene el placeholder sin editar (mdengapa/dotfiles)."
 fi
 
 SCRIPT_PATH="${BASH_SOURCE[0]:-$0}"
