@@ -1,0 +1,7 @@
+alias ls="eza --icons"
+alias ll="eza -l --icons --git"
+alias la="eza -ah --icons --git"
+alias cat="bat"
+alias grep="rg"
+alias vim="nvim"
+alias g="git"
