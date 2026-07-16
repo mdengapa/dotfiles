@@ -7,7 +7,7 @@
 #   Desde dentro de tu repo de dotfiles ya clonado:
 #     bash setup.sh
 #   O cargado directo (clona el repo solo si no lo tienes ya):
-#     curl -fsSL https://raw.githubusercontent.com/<usuario>/<repo>/main/setup.sh | bash
+#     curl -fsSL https://raw.githubusercontent.com/mdengapa/dotfiles/main/setup.sh | bash
 #   Antes de usar el modo curl, edita REPO_URL más abajo.
 #
 # Requisito: Homebrew y Xcode Command Line Tools (git) ya instalados.
@@ -51,7 +51,7 @@ if [[ "$(uname -s)" != "Darwin" ]]; then
   warn "Pensado para macOS. Continúo, pero la sección de Homebrew se saltará si no hay brew."
 fi
 
-REPO_URL="https://github.com/<usuario>/<repo>.git"
+REPO_URL="https://github.com/mdengapa/dotfiles.git"
 DEFAULT_REPO_DIR="$HOME/dotfiles"
 TIMESTAMP="$(date +%Y%m%d_%H%M%S)"
 BACKUP_DIR="$HOME/.dotfiles_backup_$TIMESTAMP"
