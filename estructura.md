@@ -1,4 +1,6 @@
-## Estructura de Dotfiles que respete el estándar XDG. El objetivo es que todas las configuraciones residan en ~/.config/ y que un solo script de instalación (setup.sh) se encargue de vincular todo y descargar las herramientas necesarias.
+## Estructura de Dotfiles que respete el estándar XDG. 
+
+El objetivo es que todas las configuraciones residan en ~/.config/ y que un solo script de instalación (setup.sh) se encargue de vincular todo y descargar las herramientas necesarias.
 
 ### Estructura del Repositorio en GitHub
 ```
