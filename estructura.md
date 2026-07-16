@@ -1,7 +1,7 @@
 ## Estructura de Dotfiles que respete el estándar XDG. El objetivo es que todas las configuraciones residan en ~/.config/ y que un solo script de instalación (setup.sh) se encargue de vincular todo y descargar las herramientas necesarias.
 
 ### Estructura del Repositorio en GitHub
-`
+```
 .
 ├── setup.sh                # Script principal de automatización
 ├── .config/
@@ -21,4 +21,4 @@
 │   │   └── scripts/        # Scripts personalizados
 │   └── starship.toml       # Tema del prompt
 └── .zshenv                 # Variables de entorno globales
-`
+```
