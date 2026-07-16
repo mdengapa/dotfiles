@@ -26,3 +26,8 @@ El objetivo es que todas las configuraciones residan en ~/.config/ y que un solo
 │   └── starship.toml       # Tema del prompt
 └── .zshenv                 # Variables de entorno globales
 ```
+
+
+** Gestión de Historial: ** Asegúrate de que tu .zshrc apunte el historial a ~/.local/state/zsh/history para mantener limpia tu carpeta de configuración.
+** FZF: **  En el archivo fzf.zsh, configura bat como motor de vista previa para ver el contenido de los archivos mientras buscas.
+** Starship: **  Coloca el archivo starship.toml directamente en el repo y asegúrate de que .zshenv tenga la variable STARSHIP_CONFIG apuntando a la ruta correcta dentro de tu configuración de Zsh.
