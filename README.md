@@ -28,7 +28,7 @@ bash install.sh
 O sin clonar nada primero (clona el repo solo si hace falta, en `~/dotfiles`):
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<usuario>/<repo>/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/mdengapa/dotfiles/main/install.sh | bash
 ```
 
 ### Paso a paso
